@@ -5,19 +5,35 @@
     <meta charset="UTF-8">
  
     <style>
-
-
     * {
       border: 1px red dashed;
     } /* delete this later */
-    
+
+    body {
+      padding: 40px 0;
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
     </style>
   </head>
 
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="pictures/profile-pic.PNG" target="Chad Shimozaki headshot"></img>
+        <img class="avatar-image" src="pictures/profile-pic.PNG" target="Chad Shimozaki headshot"></img>
       </div> <!-- /image-row -->
 
       <div class="name-row">
@@ -40,7 +56,7 @@
 
       <div class="links-row">
         <div class="item">
-          <img src="pictures/kurz.jpg" alt="Kurzgesagt logo">
+          <img class="thumbnail" src="pictures/kurz.jpg" alt="Kurzgesagt logo">
           
           <a href="https://www.youtube.com/@kurzgesagt" target="_blank">
             Approachable Animated Educational Videos
@@ -48,7 +64,7 @@
         </div>
 
         <div class="item">
-          <img src="pictures/magic-puzzle.png" alt="Magic Puzzle Company Logo">
+          <img class="thumbnail" src="pictures/magic-puzzle.png" alt="Magic Puzzle Company Logo">
 
           <a href="https://magicpuzzlecompany.com" target="_blank">
             Innovative Puzzles That Make It Impossible to Go Back to Normal Puzzles
