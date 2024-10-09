@@ -2,15 +2,56 @@
 <html>
   <head>
     <title>My link-in-bio</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
  
     <style>
-    * {
-      border: 1px red dashed;
-    } /* delete this later */
+
+    html {
+      min-height: 100%;
+    }
 
     body {
+      min-height: 100%;
       padding: 40px 0;
+      background: linear-gradient(180deg, #003f5b, #00127a, #3c0098, #ab00b6, #d5006f, #f30600, #ff9913); /* made at https://learnui.design/tools/gradient-generator.html */;
+      color: white;
+      font-family: "Raleway";
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: "Playfair Display";
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
     }
 
     .avatar-image {
@@ -25,6 +66,11 @@
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
     }
 
     </style>
@@ -58,7 +104,7 @@
         <div class="item">
           <img class="thumbnail" src="pictures/kurz.jpg" alt="Kurzgesagt logo">
           
-          <a href="https://www.youtube.com/@kurzgesagt" target="_blank">
+          <a class="link-text" href="https://www.youtube.com/@kurzgesagt" target="_blank">
             Approachable Animated Educational Videos
           </a>
         </div>
@@ -66,14 +112,12 @@
         <div class="item">
           <img class="thumbnail" src="pictures/magic-puzzle.png" alt="Magic Puzzle Company Logo">
 
-          <a href="https://magicpuzzlecompany.com" target="_blank">
+          <a class="link-text" href="https://magicpuzzlecompany.com" target="_blank">
             Innovative Puzzles That Make It Impossible to Go Back to Normal Puzzles
           </a>
         </div>
       </div> <!-- /links-row -->
     </div> <!-- /main-container -->
-
-
 
   </body>
 </html>
